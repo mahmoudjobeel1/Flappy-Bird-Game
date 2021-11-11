@@ -21,5 +21,25 @@
     <ClCompile Include="OpenGL2DTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PrintOnScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="1.wav">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="3.wav">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="2.wav">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="powerup.wav">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="win.wav">
+      <Filter>Source Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>
