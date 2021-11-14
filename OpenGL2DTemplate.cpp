@@ -20,14 +20,6 @@ using namespace std;
 #pragma comment(lib,"winmm.lib")
 
 
-
-
-//these two headers are already included in the <Windows.h> header
-#pragma comment(lib, "Winmm.lib")
-
-
-
-
 using std::string;
 #define min(a,b) (((a) > (b)) ? (b) : (a))
 #define max(a,b) (((a) > (b)) ? (a) : (b))
@@ -75,7 +67,7 @@ void main(int argc, char** argr) {
 	initXPositions();
 	randomPower();
 
-	glutCreateWindow("Robotic Arm");
+	glutCreateWindow("Flappy Bird");
 	
 	glutDisplayFunc(Display);
 	glutKeyboardFunc(Key);      // sets the Keyboard handler function; called when a key is pressed
@@ -194,18 +186,6 @@ bool checkIntersection() {
 bool checkBorders(){
 	return ballY > 790 || ballY < 10;
 }
-
-bool checkOverlap(int R, int Xc, int Yc,
-	int X1, int Y1,
-	int X2, int Y2)
-{
-	int Xn = max(X1, min(Xc, X2));
-	int Yn = max(Y1, min(Yc, Y2));
-	int Dx = Xn - Xc;
-	int Dy = Yn - Yc;
-	return (Dx * Dx + Dy * Dy) <= R * R;
-}
-
 
 bool circleIntersect(){
     for (int i = 0;i < 3;i++) {
